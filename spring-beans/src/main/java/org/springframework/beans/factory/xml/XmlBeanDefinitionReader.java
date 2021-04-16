@@ -502,25 +502,6 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 		return getRegistry().getBeanDefinitionCount() - countBefore;
 	}
 
-	public static void main(String[] args) {
-		ArrayDeque arrayDeque = new ArrayDeque(4);
-		arrayDeque.addFirst(new Object());
-//		System.out.println(arrayDeque.removeFirst());
-		System.out.println(arrayDeque.element());
-
-
-		Object[] o = new Object[10];
-		o[0]=1;
-		o[1]=2;
-		o[4]=4;
-		for (int i = 0; i < o.length; i++) {
-			System.out.println(o[i]);
-		}
-
-//		System.out.println(o.);
-
-	}
-
 	/**
 	 * Create the {@link BeanDefinitionDocumentReader} to use for actually
 	 * reading bean definitions from an XML document.
