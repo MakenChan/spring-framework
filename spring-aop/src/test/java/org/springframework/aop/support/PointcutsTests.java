@@ -84,7 +84,7 @@ public class PointcutsTests {
 	};
 
 	// Will match MyTestBeanSubclass
-	public static Pointcut myTestBeanGetterPointcut = new StaticMethodMatcherPointcut() {
+	public static Pointcut  myTestBeanGetterPointcut = new StaticMethodMatcherPointcut() {
 		@Override
 		public ClassFilter getClassFilter() {
 			return new RootClassFilter(MyTestBean.class);
